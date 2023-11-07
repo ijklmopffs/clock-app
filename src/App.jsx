@@ -133,7 +133,7 @@ function App() {
           </div>
           <div className="flex items-baseline">
             <p className="font-bold md:text-[150px] text-[100px]">
-              {formattedTime}
+              {formattedTime ? formattedTime : "12:50"}
             </p>
             <span className="font-light text-4xl">
               {location?.data.timezone.code}
